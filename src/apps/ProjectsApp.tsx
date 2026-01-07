@@ -1,4 +1,4 @@
-export default function ProjectApps () {
+export default function ProjectsApps () {
   return (
     <div className="space-y-3">
       <h2 className="text-xl font-semibold">Projects</h2>
