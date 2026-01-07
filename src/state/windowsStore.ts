@@ -91,8 +91,15 @@ export const useWindowsStore = create<WindowStore>((set, get) => ({
   nextZ: 10,
 
   openWindow: (app) => {
+    // if app is already open, focus it instead of opening a duplicate
+    const existing = get().windows.find((w) => w.app === app);
+    if(existing) {
+      get().focusWindow(existing.id);
+      return;
+    }
+
     const { title, defaultSize } = APP_META[app];
-    const id = `${app}-${crypto.randomUUID()}`;
+    const id = `${app}-${Date.now()}-${Math.random().toString(16).slice(2)}`;
     const z = get().nextZ;
 
     set((s) => ({
