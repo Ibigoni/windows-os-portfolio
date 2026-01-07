@@ -3,7 +3,7 @@
 import Window from "./Window";
 import { useWindowsStore } from "../state/windowsStore";
 import AboutApp from "../apps/AboutApp";
-import ProjectApps from "../apps/ProjectsApp";
+import ProjectsApps from "../apps/ProjectsApp";
 import ResumeApp from "../apps/ResumeApp";
 
 /**
@@ -21,13 +21,14 @@ export default function WindowManager() {
 
   return (
     <>
-      {windows.map((w) => {
+      {windows.map((w) => (
         <Window key={w.id} win={w}>
           {w.app === "about" && <AboutApp />}
-          {w.app === "projects" && <ProjectApps />}
+          {w.app === "projects" && <ProjectsApps />}
           {w.app === "resume" && <ResumeApp />}
         </Window>
-      })}
+      ))}
     </>
   );
+  
 }
