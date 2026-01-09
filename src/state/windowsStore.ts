@@ -53,10 +53,10 @@ type WindowStore = {
  * - `resume`: Metadata for the Resume application.
  */
 
-const APP_META: Record< AppType, { title: string; defaultSize: {w: number; h: number } }> = {
-  about: { title: "About", defaultSize: { w: 520, h: 380 } },
-  projects: { title: "Projects", defaultSize: { w: 720, h: 480 } },
-  resume: { title: "Resume", defaultSize: { w: 700, h: 520 } }
+const APP_META: Record<AppType, { title: string; defaultSize: { w: number; h: number };}> = {
+  about: { title: "About", defaultSize: { w: 520, h: 380 }},
+  projects: { title: "Projects", defaultSize: { w: 720, h: 480 }},
+  resume: { title: "Resume", defaultSize: { w: 700, h: 520 }},
 };
 
 /**
