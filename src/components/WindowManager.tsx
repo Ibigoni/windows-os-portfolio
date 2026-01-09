@@ -6,6 +6,7 @@ import AboutApp from "../apps/AboutApp";
 import ProjectsApps from "../apps/ProjectsApp";
 import ResumeApp from "../apps/ResumeApp";
 
+
 /**
  * Renders a collection of application windows based on the windows state from the store.
  * Each window displays a different application component depending on the `app` property:
