@@ -19,7 +19,13 @@ export default function Taskbar() {
     resume: "/icons/app/resume.png",
   };
 
-  const handleStart = isStartOpen ? closeStart() : toggleStart();
+  const handleStart = () => {
+    if (isStartOpen) {
+      closeStart();
+    } else {
+      toggleStart();
+    }
+  };
 
   const now = new Date();
   const dateString = now.toLocaleDateString("en-US", {
@@ -60,7 +66,7 @@ export default function Taskbar() {
                 onMouseDown={(e) => e.stopPropagation()}
                 onClick={(e) => {
                   e.stopPropagation();
-                  handleStart; // update handleStart implementation
+                  handleStart();
                 }}
                 className="h-10 w-10 rounded-xl hover:bg-white/10 active:bg-white/15 flex items-center justify-center"
                 aria-label="Start"
