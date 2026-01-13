@@ -107,7 +107,7 @@ export default function StartMenu() {
 
           <div className="grid grid-cols-3 gap-3">
             <StartTile
-              icon="/icons/app/profile.png"
+              icon="/icons/app/about-me.png"
               label="About"
               onClick={() => launch("about")}
             />
