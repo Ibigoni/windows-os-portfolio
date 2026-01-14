@@ -19,7 +19,7 @@ export default function ProjectsApps() {
             
             <div className="relative group">
               <img
-                src="/icons/tech/nextjs-icon.png"
+                src="/icons/Tech/nextjs-icon.png"
                 alt="Next.js"
                 className="h-5 w-5 rounded-full bg-white/80 object-contain"
               />
@@ -30,7 +30,7 @@ export default function ProjectsApps() {
 
             <div className="relative group">
               <img
-                src="/icons/tech/aws.png"
+                src="/icons/Tech/aws.png"
                 alt="AWS"
                 className="h-5 w-5 object-contain transition-transform duration-300 group-hover:scale-110"
               />
@@ -54,7 +54,7 @@ export default function ProjectsApps() {
             {/* Tech stack */}
             <div className="relative group">
               <img
-                src="/icons/tech/reactjs_logo.png"
+                src="/icons/Tech/reactjs_logo.png"
                 alt="React"
                 className="h-5 w-5 object-contain transition-transform duration-500 group-hover:rotate-180"
               />
@@ -84,7 +84,7 @@ export default function ProjectsApps() {
             {/* Tech stack */}
             <div className="relative group">
               <img
-                src="/icons/tech/javascript-logo.png"
+                src="/icons/Tech/javascript-logo.png"
                 alt="JavaScript"
                 className="h-5 w-5 object-contain"
               />
@@ -95,7 +95,7 @@ export default function ProjectsApps() {
 
             <div className="relative group">
               <img
-                src="/icons/tech/html5.png"
+                src="/icons/Tech/html5.png"
                 alt="HTML"
                 className="h-5 w-5 object-contain"
               />
@@ -106,7 +106,7 @@ export default function ProjectsApps() {
 
             <div className="relative group">
               <img
-                src="/icons/tech/CSS_icon.png"
+                src="/icons/Tech/CSS_icon.png"
                 alt="CSS"
                 className="h-5 w-5 object-contain"
               />
