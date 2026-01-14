@@ -51,7 +51,7 @@ export default function ProjectsApps() {
         <div className="mt-2 flex items-center justify-between">
           <div className="flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-2 py-1">
             
-            {/* Tech stack */}
+            {/* Tech stac */}
             <div className="relative group">
               <img
                 src="/icons/Tech/reactjs_logo.png"
@@ -81,7 +81,6 @@ export default function ProjectsApps() {
         <div className="mt-2 flex items-center justify-between">
           <div className="flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-2 py-1">
             
-            {/* Tech stack */}
             <div className="relative group">
               <img
                 src="/icons/Tech/javascript-logo.png"
