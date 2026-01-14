@@ -5,16 +5,17 @@ import { useWindowsStore } from "../state/windowsStore";
 import { useUIStore } from "@/state/uiStore";
 
 
+
 export default function Taskbar() {
   const windows = useWindowsStore((s) => s.windows);
   const focusWindow = useWindowsStore((s) => s.focusWindow);
   const toggleMinimize = useWindowsStore((s) => s.toggleMinimize);
   const toggleStart = useUIStore((s) => s.toggleStart);
-  const closeStart = useUIStore((s) => s.closeStart);
   const isStartOpen = useUIStore((s) => s.isStartOpen);
+  const closeStart = useUIStore((s) => s.closeStart);
 
   const APP_ICON: Record<string, string> = {
-    about: "/icons/app/profile.png",
+    about: "/icons/app/about-me.png",
     projects: "/icons/app/File_Explorer_logo.png",
     resume: "/icons/app/resume.png",
   };
@@ -64,7 +65,7 @@ export default function Taskbar() {
               {/* Start */}
               <button
                 onMouseDown={(e) => e.stopPropagation()}
-                onClick={(e) => {
+                onMouseDownCapture={(e) => {
                   e.stopPropagation();
                   handleStart();
                 }}
