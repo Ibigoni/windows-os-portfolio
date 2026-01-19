@@ -20,26 +20,30 @@ export default function ProjectsApps() {
           <div className="flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-2 py-1">
             
             <div className="relative group">
-              <Image
-                src="/icons/Tech/nextjs-icon.png"
-                alt="Next.js"
-                width={20}
-                height={20}
-                className="h-5 w-5 rounded-full bg-white/80 object-contain hover:bg-transparent ease-in-out transition duration-300"
-              />
+              <a href="https://nextjs.org/docs" target="_blank" className="cursor-auto">
+                <Image
+                  src="/icons/Tech/nextjs-icon.png"
+                  alt="Next.js"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 rounded-full bg-white/80 object-contain hover:bg-transparent ease-in-out transition duration-300"
+                />
+              </a>
               <Tooltip>Next.js</Tooltip>
             </div>
 
             <Divider />
 
             <div className="relative group">
-              <Image
-                src="/icons/Tech/aws.png"
-                alt="AWS"
-                width={20}
-                height={20}
-                className="h-5 w-5 object-contain transition-transform duration-300 group-hover:scale-110"
-              />
+              <a href="https://docs.aws.amazon.com/" target="_blank" className="cursor-auto">
+                <Image
+                  src="/icons/Tech/aws.png"
+                  alt="AWS"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 object-contain transition-transform duration-300 group-hover:scale-110"
+                />
+              </a>
               <Tooltip>AWS</Tooltip>
             </div>
           </div>
@@ -59,13 +63,15 @@ export default function ProjectsApps() {
             
             {/* Tech stac */}
             <div className="relative group">
-              <Image
-                src="/icons/Tech/reactjs_logo.png"
-                alt="React"
-                width={20}
-                height={20}
-                className="h-5 w-5 object-contain transition-transform duration-500 group-hover:rotate-180"
-              />
+              <a href="https://react.dev/" target="_blank">
+                <Image
+                  src="/icons/Tech/reactjs_logo.png"
+                  alt="React"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 object-contain transition-transform duration-500 group-hover:rotate-180 cursor-auto"
+                />
+              </a>
               <Tooltip>React</Tooltip>
             </div>
           </div>
@@ -90,39 +96,45 @@ export default function ProjectsApps() {
           <div className="flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-2 py-1">
             
             <div className="relative group">
-              <Image
-                src="/icons/Tech/javascript-logo.png"
-                alt="JavaScript"
-                width={20}
-                height={20}
-                className="h-5 w-5 object-contain rounded-md"
-              />
+              <a href="https://javascript.info/intro" target="_blank" className="cursor-auto">
+                <Image
+                  src="/icons/Tech/javascript-logo.png"
+                  alt="JavaScript"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 object-contain rounded-md"
+                />
+              </a>
               <Tooltip>JavaScript</Tooltip>
             </div>
 
             <Divider />
 
             <div className="relative group">
-              <Image
-                src="/icons/Tech/html5.png"
-                alt="HTML"
-                width={20}
-                height={20}
-                className="h-5 w-5 object-contain"
-              />
+              <a href="https://web.dev/html" target="_blank" className="cursor-auto">
+                <Image
+                  src="/icons/Tech/html5.png"
+                  alt="HTML"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 object-contain"
+                />
+              </a>
               <Tooltip>HTML</Tooltip>
             </div>
 
             <Divider />
 
             <div className="relative group">
-              <Image
-                src="/icons/Tech/CSS_icon.png"
-                alt="CSS"
-                width={20}
-                height={20}
-                className="h-5 w-5 object-contain"
-              />
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" className="cursor-auto">
+                <Image
+                  src="/icons/Tech/CSS_icon.png"
+                  alt="CSS"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 object-contain"
+                />
+              </a>
               <Tooltip>CSS</Tooltip>
             </div>
           </div>
