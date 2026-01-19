@@ -3,6 +3,8 @@
 import { useRef } from "react";
 import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
 import { useWindowsStore, WindowState } from "../state/windowsStore";
+import { Minus, Square, X } from "lucide-react";
+
 
 export default function Window({
   win,
@@ -37,36 +39,36 @@ export default function Window({
 
         <div className="flex gap-2">
           <button
-            className="w-8 h-7 rounded hover:bg-white/10"
+            className="w-8 h-7 rounded hover:bg-white/10 flex items-center justify-center"
             onClick={(e) => {
               e.stopPropagation();
               toggleMinimize(win.id);
             }}
             aria-label="Minimize"
           >
-            &#128469;
+            <Minus className="h-4 w-4" />
           </button>
 
           <button
-            className="w-8 h-7 rounded hover:bg-white/10"
+            className="w-8 h-7 rounded hover:bg-white/10 flex items-center justify-center"
             onClick={(e) => {
               e.stopPropagation();
               toggleMaximize(win.id);
             }}
             aria-label="Maximize"
           >
-            &#128470;
+            <Square className="h-4 w-4"/>
           </button>
 
           <button
-            className="w-8 h-7 rounded hover:bg-red-500/70"
+            className="w-8 h-7 rounded hover:bg-red-500/70 flex items-center justify-center"
             onClick={(e) => {
               e.stopPropagation();
               closeWindow(win.id);
             }}
             aria-label="Close"
           >
-            &#128473;
+            <X className="h-4 w-4" />
           </button>
         </div>
       </div>
