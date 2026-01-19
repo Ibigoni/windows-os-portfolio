@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function ProjectsApps() {
   return (
     <div className="space-y-4 text-white">
@@ -18,10 +20,12 @@ export default function ProjectsApps() {
           <div className="flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-2 py-1">
             
             <div className="relative group">
-              <img
+              <Image
                 src="/icons/Tech/nextjs-icon.png"
                 alt="Next.js"
-                className="h-5 w-5 rounded-full bg-white/80 object-contain"
+                width={20}
+                height={20}
+                className="h-5 w-5 rounded-full bg-white/80 object-contain hover:bg-transparent ease-in-out transition duration-300"
               />
               <Tooltip>Next.js</Tooltip>
             </div>
@@ -29,9 +33,11 @@ export default function ProjectsApps() {
             <Divider />
 
             <div className="relative group">
-              <img
+              <Image
                 src="/icons/Tech/aws.png"
                 alt="AWS"
+                width={20}
+                height={20}
                 className="h-5 w-5 object-contain transition-transform duration-300 group-hover:scale-110"
               />
               <Tooltip>AWS</Tooltip>
@@ -53,9 +59,11 @@ export default function ProjectsApps() {
             
             {/* Tech stac */}
             <div className="relative group">
-              <img
+              <Image
                 src="/icons/Tech/reactjs_logo.png"
                 alt="React"
+                width={20}
+                height={20}
                 className="h-5 w-5 object-contain transition-transform duration-500 group-hover:rotate-180"
               />
               <Tooltip>React</Tooltip>
@@ -82,10 +90,12 @@ export default function ProjectsApps() {
           <div className="flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-2 py-1">
             
             <div className="relative group">
-              <img
+              <Image
                 src="/icons/Tech/javascript-logo.png"
                 alt="JavaScript"
-                className="h-5 w-5 object-contain"
+                width={20}
+                height={20}
+                className="h-5 w-5 object-contain rounded-md"
               />
               <Tooltip>JavaScript</Tooltip>
             </div>
@@ -93,9 +103,11 @@ export default function ProjectsApps() {
             <Divider />
 
             <div className="relative group">
-              <img
+              <Image
                 src="/icons/Tech/html5.png"
                 alt="HTML"
+                width={20}
+                height={20}
                 className="h-5 w-5 object-contain"
               />
               <Tooltip>HTML</Tooltip>
@@ -104,9 +116,11 @@ export default function ProjectsApps() {
             <Divider />
 
             <div className="relative group">
-              <img
+              <Image
                 src="/icons/Tech/CSS_icon.png"
                 alt="CSS"
+                width={20}
+                height={20}
                 className="h-5 w-5 object-contain"
               />
               <Tooltip>CSS</Tooltip>
