@@ -4,14 +4,12 @@ A Windows OS–style personal portfolio that mimics a desktop environment with d
 
 🌐 Live: https://ibigoni.dev
 
----
 
 ## Overview
 
 Instead of a traditional scrolling portfolio, this project explores a more interactive, system-driven UI inspired by a desktop operating system.  
 It focuses on **UI architecture, state management, and interaction design** rather than static pages.
 
----
 
 ## Features
 
@@ -22,7 +20,6 @@ It focuses on **UI architecture, state management, and interaction design** rath
 - Window controls: minimize, maximize, close  
 - Immersive full-screen experience  
 
----
 
 ## Tech Stack
 
@@ -33,7 +30,6 @@ It focuses on **UI architecture, state management, and interaction design** rath
 - Zustand (global window state)  
 - react-draggable  
 
----
 
 ## Run Locally
 
